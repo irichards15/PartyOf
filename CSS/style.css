@@ -1,45 +1,180 @@
 
-/* Search Bar CSS */
-/* @import url(https://fonts.googleapis.com/css?family=Open+Sans);
-
-.search {
+.header{
+  min-height: 100vh;
   width: 100%;
-  position: relative;
+  background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(./cheers3.jpg);
+  background-size: cover;
+  background-position: center;
+}
+nav {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 7%;
 }
 
-.searchTerm {
-  width: 100%;
-  border: 3px solid #00B4CC;
-  border-right: none;
-  padding: 5px;
-  height: 20px;
-  border-radius: 5px 0 0 5px;
-  outline: none;
-  color: #9DBFAF;
-}
-
-.searchTerm:focus{
-  color: #00B4CC;
-}
-
-.searchButton {
-  width: 40px;
-  height: 36px;
-  border: 1px solid #00B4CC;
-  background: #00B4CC;
-  text-align: center;
-  color: #fff;
-  border-radius: 0 5px 5px 0;
+.logo {
+  width: 30px;
   cursor: pointer;
-  font-size: 20px;
 }
 
-/*Resize the wrap to see the search bar change!*/
-/* .wrap{
-  width: 30%;
+.nav-links li {
+  list-style: none;
+  display: inline-block;
+  margin: 10px 30px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.Location-btn {
+  text-decoration: none;
+  color: #fff;
+}
+
+.Account-btn {
+  text-decoration: none;
+  color: #000;
+  background: #fff;
+  padding: 8px 20px;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.container {
+  padding: 0 7%;
+}
+
+.header h1 {
+  font-size: 4vw;
+  font-weight: 500px;
+  color: #fff;
+  text-align: center;
+  padding-top: 17%;
+}
+
+.search-box {
+  background: #fff;
+  width: 70%;
+  margin: 30px auto;
+  padding: 6px 10px 6px 30px;
+  border-radius: 50px;
+}
+
+.search-box form {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.search-box form input{
+  display: block;
+  border: 0;
+  outline: none;
+  background: transparent;
+}
+
+.search-box form button {
+  background: #f69f83;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+.search-box form img {
+  width: 30px;
+  margin-top: 3px;
+}
+
+.location-input {
+  flex: 1;
+}
+
+/* Events Section */
+.Events {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 30px;
+}
+
+.Events div img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.Events div {
+  position: relative;
+}
+
+.Events div span {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-} */ */
+  transform: translate(-50%,-50%);
+  text-align: center;
+  color: #fff;
+}
+
+/* Browse by Category */
+.Category {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 30px;
+}
+
+.browse-btn {
+  width: 100%;
+  border-radius: 5px;
+  background-color: #f69f83;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  height: 4vh;
+  color: #fff;
+  padding-top: 4px;
+  font-size: 24px;
+}
+
+/* Hot Spots Near You */
+.trending {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 30px;
+  margin-bottom: 30px;
+}
+
+#icon {
+  width: 15px;
+}
+
+.trending div img {
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.trending h3 {
+  font-weight: 600;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.trending p {
+  margin-left: 10px;
+}
+
+.trending div {
+  /* border: 1px #0086B0 solid; */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+}
+
+footer {
+  background-color: #0086B0;
+}
+
