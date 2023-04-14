@@ -9,16 +9,16 @@
         <div class="header">
             <nav>
                 <!-- logo goes here -->
-                <img src="./Images/icons8-search-30.png" class="logo" alt="logo">
+                <img src="./Images/Logo.png" class="logo" alt="logo">
 
                 <ul class="nav-links">
-                    <li><a href="#">About</a></li>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Search</a></li>
                     <li><a href="#">Plan an Event</a></li>
+                    <li><a href="#">Plan an Event</a></li>
                 </ul>
                 <!-- <a href="#" class="Location-btn">Chicago, IL</a> -->
-                <a href="#" class="Account-btn">Hi, Marja!</a>
+                <a href="./sign_up2.html" class="Account-btn">Sign Up | Sign In</a>
             </nav>
 
             <div class="container">
@@ -26,14 +26,16 @@
                 <div class="search-box">
                     <form>
                         <div class="location-input">
-                            <label></label>
-                            <input type="text" placeholder="Any Place">
+                            <label>Where</label>
+                            <input type="text" placeholder="Search Venues in Chicago">
                         </div>
-                        <div>
-                            <input type="text" placeholder="Anytime">
+                        <div class="when">
+                            <label>When</label>
+                            <input type="date" placeholder="Add Your Dates">
                         </div>
-                        <div>
-                            <input type="text" placeholder="Add Guests">
+                        <div class="who">
+                            <label>Who</label>
+                            <input type="number" min="1" max="20" placeholder="Guests">
                         </div>
                         <button type="submit"><img src="./Images/icons8-search-30.png" alt="search"></button>
                     </form>
@@ -47,14 +49,15 @@
             <div class="Events">
                 <div>
                     <img src="./Images/people5.jpg" alt="people">
-                    <span>
+                    <span id="event1">
                         <h3>Plan with my group's schedules in mind</h3>
                         <p>Create an event with poll</p>
+                        <!-- <p>Create an event with poll <img id="arrow" src="./Images/arrow.png" alt="arrow"></p> -->
                     </span>
                 </div>
-                <div>
+                <div id="image2">
                     <img src="./Images/bar5.jpg" alt="bar">
-                    <span>
+                    <span id="event2">
                         <h3>Host knows most-est! Book and share reservation details</h3>
                         <p>Plan an event</p>
                     </span>
@@ -78,24 +81,24 @@
                 <div>
                     <img src="./Images/bar4.jpg" alt="bar4">
                     <h3>Richard's Pub</h3>
-                    <p class="card-text">$500/hr | <img class="icon" id="icon" src="./Images/man.png" alt="man"> 30 | <img class="icon" id="icon" src="./Images/star.png" alt="stars"> 4.7 (25)</p>
+                    <p class="card-text">$500/hr | <img class="icon" id="icon" src="./Images/man.png" alt="man"> 15 | <img class="icon" id="icon" src="./Images/star.png" alt="stars"> 4.7 (25)</p>
                     <p>Wicker Park | Private Space</p>
                 </div>
                 <div>
                     <img src="./Images/bar14.jpg" alt="bar14">
-                    <h3>Guzman's Bar</h3>
+                    <h3>Guzman Gastro</h3>
                     <p class="card-text">$400/hr | <img class="icon" id="icon" src="./Images/man.png" alt="man"> 30 | <img class="icon" id="icon" src="./Images/star.png" alt="stars"> 4.4 (46)</p>
                     <p>Bucktown | Whole Venue</p>
                 </div>
                 <div>
                     <img src="./Images/bar6.jpg" alt="bar6">
-                    <h3>Havalic's Pub</h3>
+                    <h3>Havalic's Hot Spot</h3>
                     <p class="card-text">$300/hr | <img class="icon" id="icon" src="./Images/man.png" alt="man"> 20 | <img class="icon" id="icon" src="./Images/star.png" alt="stars"> 4.5 (12)</p>
                     <p>Humboldt Park | Private Room</p>
                 </div>
                 <div>
                     <img src="./Images/bar9.jpg" alt="bar9">
-                    <h3>Eboreime's Bar</h3>
+                    <h3>Eboreime's</h3>
                     <p class="card-text">$2500/hr | <img class="icon" id="icon" src="./Images/man.png" alt="man"> 55 | <img class="icon" id="icon" src="./Images/star.png" alt="stars"> 4.8 (63)</p>
                     <p>Lakeview East | Bar Package</p>
                 </div>
@@ -106,28 +109,28 @@
             <h2 class="sub-title">New and Ready to Host</h2>
             <div class="trending">
                 <div>
-                    <img src="./Images/bar4.jpg" alt="bar4">
-                    <h3>Richard's Pub</h3>
-                    <p class="card-text">$500/hr | <img class="icon" id="icon" src="./Images/man.png" alt="man"> 30 | <img class="icon" id="icon" src="./Images/star.png" alt="stars"> 4.7 (25)</p>
-                    <p>Wicker Park | Private Space</p>
+                    <img src="./Images/drinks.jpg" alt="drinks">
+                    <h3>Kelly's Corner</h3>
+                    <p class="card-text">$200/hr | <img class="icon" id="icon" src="./Images/man.png" alt="man"> 10 | <img class="icon" id="icon" src="./Images/star.png" alt="stars"> 4.8 (32)</p>
+                    <p>Lincoln Park | Tiki Bar</p>
                 </div>
                 <div>
-                    <img src="./Images/bar14.jpg" alt="bar14">
-                    <h3>Guzman's Bar</h3>
-                    <p class="card-text">$400/hr | <img class="icon" id="icon" src="./Images/man.png" alt="man"> 30 | <img class="icon" id="icon" src="./Images/star.png" alt="stars"> 4.4 (46)</p>
-                    <p>Bucktown | Whole Venue</p>
+                    <img src="./Images/people3.jpg" alt="people3">
+                    <h3>Humrichouser Haus</h3>
+                    <p class="card-text">$600/hr | <img class="icon" id="icon" src="./Images/man.png" alt="man"> 50 | <img class="icon" id="icon" src="./Images/star.png" alt="stars"> 4.9 (51)</p>
+                    <p>Pilsen | Whole Venue</p>
                 </div>
                 <div>
-                    <img src="./Images/bar6.jpg" alt="bar6">
-                    <h3>Havalic's Pub</h3>
-                    <p class="card-text">$300/hr | <img class="icon" id="icon" src="./Images/man.png" alt="man"> 20 | <img class="icon" id="icon" src="./Images/star.png" alt="stars"> 4.5 (12)</p>
-                    <p>Humboldt Park | Private Room</p>
+                    <img src="./Images/disco.jpg" alt="disco">
+                    <h3>David's Disco</h3>
+                    <p class="card-text">$450/hr | <img class="icon" id="icon" src="./Images/man.png" alt="man"> 40 | <img class="icon" id="icon" src="./Images/star.png" alt="stars"> 4.8 (22)</p>
+                    <p>River North | Private Room</p>
                 </div>
                 <div>
-                    <img src="./Images/bar9.jpg" alt="bar9">
-                    <h3>Eboreime's Bar</h3>
-                    <p class="card-text">$2500/hr | <img class="icon" id="icon" src="./Images/man.png" alt="man"> 55 | <img class="icon" id="icon" src="./Images/star.png" alt="stars"> 4.8 (63)</p>
-                    <p>Lakeview East | Bar Package</p>
+                    <img src="./Images/manbun.jpg" alt="manbun">
+                    <h3>Mexican Party Hostel</h3>
+                    <p class="card-text">$2500/day | <img class="icon" id="icon" src="./Images/man.png" alt="man"> 20 | <img class="icon" id="icon" src="./Images/star.png" alt="stars"> 1.4 (19)</p>
+                    <p>Mexico | Beer</p>
                 </div>
             </div>
         </div>
@@ -136,28 +139,28 @@
             <h2 class="sub-title">Perfect for Parties of 10+</h2>
             <div class="trending">
                 <div>
-                    <img src="./Images/bar4.jpg" alt="bar4">
-                    <h3>Richard's Pub</h3>
-                    <p class="card-text">$500/hr | <img class="icon" id="icon" src="./Images/man.png" alt="man"> 30 | <img class="icon" id="icon" src="./Images/star.png" alt="stars"> 4.7 (25)</p>
-                    <p>Wicker Park | Private Space</p>
+                    <img src="./Images/bar2.jpg" alt="bar2">
+                    <h3>The Palazzo</h3>
+                    <p class="card-text">$500/hr | <img class="icon" id="icon" src="./Images/man.png" alt="man"> 20 | <img class="icon" id="icon" src="./Images/star.png" alt="stars"> 4.7 (36)</p>
+                    <p>West Loop | Private Room</p>
                 </div>
                 <div>
-                    <img src="./Images/bar14.jpg" alt="bar14">
-                    <h3>Guzman's Bar</h3>
-                    <p class="card-text">$400/hr | <img class="icon" id="icon" src="./Images/man.png" alt="man"> 30 | <img class="icon" id="icon" src="./Images/star.png" alt="stars"> 4.4 (46)</p>
-                    <p>Bucktown | Whole Venue</p>
+                    <img src="./Images/food.jpg" alt="food">
+                    <h3>Coastal Provisions</h3>
+                    <p class="card-text">$400/hr | <img class="icon" id="icon" src="./Images/man.png" alt="man"> 25 | <img class="icon" id="icon" src="./Images/star.png" alt="stars"> 4.6 (61)</p>
+                    <p>Avondale | Whole Venue</p>
                 </div>
                 <div>
-                    <img src="./Images/bar6.jpg" alt="bar6">
-                    <h3>Havalic's Pub</h3>
-                    <p class="card-text">$300/hr | <img class="icon" id="icon" src="./Images/man.png" alt="man"> 20 | <img class="icon" id="icon" src="./Images/star.png" alt="stars"> 4.5 (12)</p>
-                    <p>Humboldt Park | Private Room</p>
+                    <img src="./Images/bar16.jpg" alt="bar16">
+                    <h3>The Five Snakes</h3>
+                    <p class="card-text">$300/hr | <img class="icon" id="icon" src="./Images/man.png" alt="man"> 30 | <img class="icon" id="icon" src="./Images/star.png" alt="stars"> 4.9 (18)</p>
+                    <p>Logan Square | Private Space</p>
                 </div>
                 <div>
-                    <img src="./Images/bar9.jpg" alt="bar9">
-                    <h3>Eboreime's Bar</h3>
-                    <p class="card-text">$2500/hr | <img class="icon" id="icon" src="./Images/man.png" alt="man"> 55 | <img class="icon" id="icon" src="./Images/star.png" alt="stars"> 4.8 (63)</p>
-                    <p>Lakeview East | Bar Package</p>
+                    <img src="./Images/cheers4.jpg" alt="cheers4">
+                    <h3>Titi's</h3>
+                    <p class="card-text">$220/hr | <img class="icon" id="icon" src="./Images/man.png" alt="man"> 20 | <img class="icon" id="icon" src="./Images/star.png" alt="stars"> 4.5 (52)</p>
+                    <p>Old Town | Whole Venue</p>
                 </div>
             </div>
         </div>
@@ -170,7 +173,7 @@
     <footer>
         <nav>
             <!-- logo goes here -->
-            <img src="./Images/icons8-search-30.png" class="logo" alt="logo">
+            <img src="./Images/Logo.png" class="logo" alt="logo">
 
             <ul class="nav-links">
                 <li><a href="#">About</a></li>

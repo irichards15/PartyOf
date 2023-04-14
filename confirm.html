@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="CSS/style.css">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="CSS/confirm.css">
     
         <!-- Bootstrap & Fontawesome CSS only! -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -11,25 +9,32 @@
     </head>
 
     <body>
-        <header class="navigation">
+        <!-- <header class="navigation">
             <div class="inline-block logo">
-                <!-- logo goes here -->
-                <h2>Party Of</h2>
+                <img src="./Images/Logo.png" class="logo" alt="logo">
             </div>
-        </header>
+        </header> -->
 
+        <div class="form">
         <!-- Confirmed image goes here -->
-        <img src="./Images/icons8-done-240.png" alt="Done">
-        <h3>You’re in!</h3> 
-        <p>Tell us a little more about yourself so that we can get this party started. (If you’re feeling shy, we can do this later.)</p>
-        <button type="button" class="btn btn-secondary btn-lg">Add a profile pic</button>
-        <button type="button" class="btn btn-secondary btn-lg">Add your payment handle</button>
-        <button type="button" class="btn btn-secondary btn-lg">Home</button>
+            <div class="checkmark">
+                <img class="confirm" src="./Images/icons8-done-240.png" alt="Done">
+            </div>
+            <div>
+                <h3>You're in!</h3> 
+                <p>Tell us a little more about yourself so that we can get this party started. (If you're feeling shy, we can do this later.)</p>
+            </div>
+            <div class="button_group">
+                <button class="form__button">Add a Profile Pic</button>
+                <button class="form__button">Add your payment handle</button>
+                <button class="form__button"><a class="link" href="./index2.html">Home</a></button>
+            </div>
+        </div>
     </body>
 
-    <footer>
+    <!-- <footer>
         <div class="footer logo">
-            <!-- logo goes here -->
+
             <h4>Party Of</h4>
         </div>
 
@@ -42,8 +47,6 @@
             </ul>
         </nav>
 
-        <!-- Social media icons go here -->
-
-    </footer>
+    </footer> -->
 
 </html>

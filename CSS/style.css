@@ -14,7 +14,7 @@ nav {
 }
 
 .logo {
-  width: 30px;
+  width: 120px;
   cursor: pointer;
 }
 
@@ -43,6 +43,7 @@ nav {
   font-size: 14px;
 }
 
+/* Search Bar */
 .container {
   padding: 0 7%;
 }
@@ -69,11 +70,15 @@ nav {
   flex-wrap: wrap;
 }
 
-.search-box form input{
+.search-box form input {
   display: block;
   border: 0;
   outline: none;
   background: transparent;
+}
+
+.search-box form label {
+  margin-bottom: 4px;
 }
 
 .search-box form button {
@@ -95,6 +100,16 @@ nav {
   flex: 1;
 }
 
+.when {
+  margin-right: 160px;
+}
+
+.who {
+  /* overflow: visible; */
+  text-overflow: ellipsis;
+  margin-right: 200px;
+}
+
 /* Events Section */
 .Events {
   display: grid;
@@ -104,7 +119,9 @@ nav {
 
 .Events div img {
   width: 100%;
-  border-radius: 5px;
+  border-radius: 10px;
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
 }
 
 .Events div {
@@ -118,6 +135,22 @@ nav {
   transform: translate(-50%,-50%);
   text-align: center;
   color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  /* background: rgba(0, 0, 0, 0.7); Black background with 0.5 opacity */
+}
+
+#arrow {
+  width: 25px;
+}
+
+.Events div span h3 {
+  font-size: 36px;
+}
+
+.Events div span p {
+  font-size: 20px;
+  cursor: pointer;
 }
 
 /* Browse by Category */
@@ -176,5 +209,8 @@ nav {
 
 footer {
   background-color: #0086B0;
+  min-height: 150px;
 }
 
+
+/* Sign Up CSS */
