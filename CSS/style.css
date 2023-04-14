@@ -14,7 +14,7 @@ nav {
 }
 
 .logo {
-  width: 120px;
+  width: 150px;
   cursor: pointer;
 }
 
@@ -212,5 +212,12 @@ footer {
   min-height: 150px;
 }
 
+.social-media {
+  width: 30px;
+}
 
-/* Sign Up CSS */
+.footer-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
